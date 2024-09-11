@@ -8,7 +8,6 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/g2pPaymentConfig")
-@CrossOrigin("*")
 public class G2pPaymentConfigController {
     @Autowired
     private G2pPaymentConfigService g2PPaymentConfigService;

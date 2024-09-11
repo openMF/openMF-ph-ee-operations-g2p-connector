@@ -9,7 +9,6 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/governmentEntity")
-@CrossOrigin("*")
 public class GovernmentEntityController {
     @Autowired
     private GovernmentEntityService governmentEntityService;

@@ -10,7 +10,6 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/dfsp")
-@CrossOrigin("*")
 public class DfspController {
     @Autowired
     private DfspService dfspService;
