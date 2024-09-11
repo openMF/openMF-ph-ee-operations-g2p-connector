@@ -1,0 +1,1662 @@
+{
+	"info": {
+		"_postman_id": "94811188-2ef2-4eb0-bb7a-85a85453ee7a",
+		"name": "G2P Payment Configuration",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26804879"
+	},
+	"item": [
+		{
+			"name": "DFSPS",
+			"item": [
+				{
+					"name": "Get dfsp By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8084/dfsp/10123",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"dfsp",
+								"10123"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get dfsp By Id",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8084/dfsp/10123",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8084",
+									"path": [
+										"dfsp",
+										"10123"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 11 Sep 2024 12:19:55 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"fspId\": 10123,\n    \"name\": \"EQUITAS\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Add Dfsp",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"HOB\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8084/dfsp",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"dfsp"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Add Dfsp",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"HOB\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8084/dfsp",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8084",
+									"path": [
+										"dfsp"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 11 Sep 2024 12:20:20 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"fspId\": 99891,\n    \"name\": \"HOB\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Add Dfsp Copy",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8084/dfsp/99891",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"dfsp",
+								"99891"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Add Dfsp Copy",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8084/dfsp/99891",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8084",
+									"path": [
+										"dfsp",
+										"99891"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 11 Sep 2024 12:21:02 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "Update Dfsp",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"TELEGANA-UP\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8084/dfsp/10901",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"dfsp",
+								"10901"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update Dfsp",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"TELEGANA-UP\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8084/dfsp/10901",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8084",
+									"path": [
+										"dfsp",
+										"10901"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 11 Sep 2024 12:21:56 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"fspId\": 10901,\n    \"name\": \"TELEGANA-UP\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Get All Dfsp",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8084/dfsp",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"dfsp"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get All Dfsp",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8084/dfsp",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8084",
+									"path": [
+										"dfsp"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 11 Sep 2024 12:19:08 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"fspId\": 10123,\n        \"name\": \"EQUITAS\"\n    },\n    {\n        \"fspId\": 10901,\n        \"name\": \"TELANGANA\"\n    },\n    {\n        \"fspId\": 11234,\n        \"name\": \"UCO\"\n    },\n    {\n        \"fspId\": 12345,\n        \"name\": \"ICICI\"\n    },\n    {\n        \"fspId\": 19012,\n        \"name\": \"KARUR VYSYA\"\n    },\n    {\n        \"fspId\": 21012,\n        \"name\": \"UNION\"\n    },\n    {\n        \"fspId\": 21234,\n        \"name\": \"FEDERAL\"\n    },\n    {\n        \"fspId\": 22345,\n        \"name\": \"SYNDICATE\"\n    },\n    {\n        \"fspId\": 23456,\n        \"name\": \"SBI\"\n    },\n    {\n        \"fspId\": 29123,\n        \"name\": \"LAKSHMI VILAS\"\n    },\n    {\n        \"fspId\": 31123,\n        \"name\": \"UNITED\"\n    },\n    {\n        \"fspId\": 32345,\n        \"name\": \"HINDUSTAN\"\n    },\n    {\n        \"fspId\": 33456,\n        \"name\": \"VIJAYA\"\n    },\n    {\n        \"fspId\": 34567,\n        \"name\": \"HDFC\"\n    },\n    {\n        \"fspId\": 39234,\n        \"name\": \"MAHARASHTRA\"\n    },\n    {\n        \"fspId\": 41234,\n        \"name\": \"VIDYARTHI\"\n    },\n    {\n        \"fspId\": 43456,\n        \"name\": \"INDBANK\"\n    },\n    {\n        \"fspId\": 44567,\n        \"name\": \"ALLAHABAD\"\n    },\n    {\n        \"fspId\": 45678,\n        \"name\": \"AXIS\"\n    },\n    {\n        \"fspId\": 49345,\n        \"name\": \"ORIENTAL\"\n    },\n    {\n        \"fspId\": 51345,\n        \"name\": \"YES\"\n    },\n    {\n        \"fspId\": 54567,\n        \"name\": \"INDUSIND\"\n    },\n    {\n        \"fspId\": 55678,\n        \"name\": \"ANDHRA\"\n    },\n    {\n        \"fspId\": 56789,\n        \"name\": \"KOTAK\"\n    },\n    {\n        \"fspId\": 59456,\n        \"name\": \"PUNJAB & SINDH\"\n    },\n    {\n        \"fspId\": 65678,\n        \"name\": \"INFOTECH\"\n    },\n    {\n        \"fspId\": 66789,\n        \"name\": \"BANK OF BARODA\"\n    },\n    {\n        \"fspId\": 67890,\n        \"name\": \"PNB\"\n    },\n    {\n        \"fspId\": 69567,\n        \"name\": \"RELIANCE\"\n    },\n    {\n        \"fspId\": 76789,\n        \"name\": \"IOB\"\n    },\n    {\n        \"fspId\": 77890,\n        \"name\": \"CENTRAL BANK\"\n    },\n    {\n        \"fspId\": 78901,\n        \"name\": \"BOB\"\n    },\n    {\n        \"fspId\": 79678,\n        \"name\": \"SIDBI\"\n    },\n    {\n        \"fspId\": 87890,\n        \"name\": \"J&K\"\n    },\n    {\n        \"fspId\": 88901,\n        \"name\": \"CORPORATION\"\n    },\n    {\n        \"fspId\": 89012,\n        \"name\": \"IDBI\"\n    },\n    {\n        \"fspId\": 89789,\n        \"name\": \"SOUTH INDIAN\"\n    },\n    {\n        \"fspId\": 90123,\n        \"name\": \"CANARA\"\n    },\n    {\n        \"fspId\": 98901,\n        \"name\": \"KARNATAKA\"\n    },\n    {\n        \"fspId\": 99012,\n        \"name\": \"DENA\"\n    },\n    {\n        \"fspId\": 99890,\n        \"name\": \"TAMIL NADU\"\n    }\n]"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Government Entites",
+			"item": [
+				{
+					"name": "Get All Government Entites",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8084/governmentEntity",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"governmentEntity"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get All Government Entity",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8084/governmentEntity",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8084",
+									"path": [
+										"governmentEntity"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 11 Sep 2024 12:26:46 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"govInstId\": 10101,\n        \"name\": \"Ministry of Finance\"\n    },\n    {\n        \"govInstId\": 10123,\n        \"name\": \"Ministry of Jal Shakti\"\n    },\n    {\n        \"govInstId\": 10234,\n        \"name\": \"Ministry of Housing and Urban Affairs\"\n    },\n    {\n        \"govInstId\": 11223,\n        \"name\": \"Ministry of Environment, Forest and Climate Change\"\n    },\n    {\n        \"govInstId\": 19012,\n        \"name\": \"Ministry of External Affairs\"\n    },\n    {\n        \"govInstId\": 20202,\n        \"name\": \"Ministry of Health\"\n    },\n    {\n        \"govInstId\": 21234,\n        \"name\": \"Ministry of Panchayati Raj\"\n    },\n    {\n        \"govInstId\": 21345,\n        \"name\": \"Ministry of Power\"\n    },\n    {\n        \"govInstId\": 22334,\n        \"name\": \"Ministry of Science and Technology\"\n    },\n    {\n        \"govInstId\": 29123,\n        \"name\": \"Ministry of Home Affairs\"\n    },\n    {\n        \"govInstId\": 30303,\n        \"name\": \"Ministry of Education\"\n    },\n    {\n        \"govInstId\": 32345,\n        \"name\": \"Ministry of Tribal Affairs\"\n    },\n    {\n        \"govInstId\": 32456,\n        \"name\": \"Ministry of New and Renewable Energy\"\n    },\n    {\n        \"govInstId\": 33445,\n        \"name\": \"Ministry of Information and Broadcasting\"\n    },\n    {\n        \"govInstId\": 39234,\n        \"name\": \"Ministry of Defence\"\n    },\n    {\n        \"govInstId\": 40404,\n        \"name\": \"Ministry of Defence\"\n    },\n    {\n        \"govInstId\": 43456,\n        \"name\": \"Ministry of Rural Development\"\n    },\n    {\n        \"govInstId\": 43567,\n        \"name\": \"Ministry of Petroleum and Natural Gas\"\n    },\n    {\n        \"govInstId\": 44556,\n        \"name\": \"Ministry of Culture\"\n    },\n    {\n        \"govInstId\": 50505,\n        \"name\": \"Ministry of Agriculture\"\n    },\n    {\n        \"govInstId\": 54567,\n        \"name\": \"Ministry of Consumer Affairs, Food and Public Distribution\"\n    },\n    {\n        \"govInstId\": 54678,\n        \"name\": \"Ministry of Mines\"\n    },\n    {\n        \"govInstId\": 55667,\n        \"name\": \"Ministry of Civil Aviation\"\n    },\n    {\n        \"govInstId\": 60606,\n        \"name\": \"Ministry of Commerce\"\n    },\n    {\n        \"govInstId\": 65678,\n        \"name\": \"Ministry of Textiles\"\n    },\n    {\n        \"govInstId\": 65789,\n        \"name\": \"Ministry of Earth Sciences\"\n    },\n    {\n        \"govInstId\": 66778,\n        \"name\": \"Ministry of Railways\"\n    },\n    {\n        \"govInstId\": 70707,\n        \"name\": \"Ministry of Labour\"\n    },\n    {\n        \"govInstId\": 76789,\n        \"name\": \"Ministry of Commerce and Industry\"\n    },\n    {\n        \"govInstId\": 76890,\n        \"name\": \"Ministry of Skill Development and Entrepreneurship\"\n    },\n    {\n        \"govInstId\": 77889,\n        \"name\": \"Ministry of Road Transport and Highways\"\n    },\n    {\n        \"govInstId\": 80808,\n        \"name\": \"Ministry of Women and Child Development\"\n    },\n    {\n        \"govInstId\": 87890,\n        \"name\": \"Ministry of Corporate Affairs\"\n    },\n    {\n        \"govInstId\": 87901,\n        \"name\": \"Ministry of Youth Affairs and Sports\"\n    },\n    {\n        \"govInstId\": 88990,\n        \"name\": \"Ministry of Shipping\"\n    },\n    {\n        \"govInstId\": 90909,\n        \"name\": \"Ministry of Social Justice and Empowerment\"\n    },\n    {\n        \"govInstId\": 98012,\n        \"name\": \"Ministry of Animal Husbandry, Dairying and Fisheries\"\n    },\n    {\n        \"govInstId\": 98901,\n        \"name\": \"Ministry of Law and Justice\"\n    },\n    {\n        \"govInstId\": 99001,\n        \"name\": \"Ministry of Micro, Small and Medium Enterprises\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Get Government Entity by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8084/governmentEntity/10101",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"governmentEntity",
+								"10101"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Government Entity by ID",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8084/governmentEntity/10101",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8084",
+									"path": [
+										"governmentEntity",
+										"10101"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 11 Sep 2024 12:27:23 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"govInstId\": 10101,\n    \"name\": \"Ministry of Finance\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Add  Government Entity",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Ministry of Food\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8084/governmentEntity",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"governmentEntity"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Add  Government Entity",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"Ministry of Food\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8084/governmentEntity",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8084",
+									"path": [
+										"governmentEntity"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 11 Sep 2024 12:28:20 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"govInstId\": 99002,\n    \"name\": \"Ministry of Food\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Update Government Entity",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Ministry of Social Welfare -updated2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8084/governmentEntity/10101",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"governmentEntity",
+								"10101"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update Government Entity",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"Ministry of Social Welfare -updated2\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8084/governmentEntity/10101",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8084",
+									"path": [
+										"governmentEntity",
+										"10101"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 11 Sep 2024 12:28:47 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"govInstId\": 10101,\n    \"name\": \"Ministry of Social Welfare -updated2\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete Government Entity",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8084/governmentEntity/99002",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"governmentEntity",
+								"99002"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete Government Entity",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8084/governmentEntity/99002",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8084",
+									"path": [
+										"governmentEntity",
+										"99002"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 11 Sep 2024 12:30:04 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "G2P Payment Config",
+			"item": [
+				{
+					"name": "Get All G2P Payment Config",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8084/g2pPaymentConfig",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"g2pPaymentConfig"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get All G2P payment Config",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8084/g2pPaymentConfig",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8084",
+									"path": [
+										"g2pPaymentConfig"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 11 Sep 2024 13:00:13 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"configId\": 10001,\n        \"account\": \"123456789012\",\n        \"governmentEntity\": {\n            \"govInstId\": 10101,\n            \"name\": \"Ministry of Social Welfare -updated2\"\n        },\n        \"dfsp\": {\n            \"fspId\": 12345,\n            \"name\": \"ICICI\"\n        },\n        \"program\": {\n            \"programId\": 10101,\n            \"programName\": \"Tax Relief v2\"\n        },\n        \"status\": \"Active\"\n    },\n    {\n        \"configId\": 10002,\n        \"account\": \"234567890123\",\n        \"governmentEntity\": {\n            \"govInstId\": 20202,\n            \"name\": \"Ministry of Health\"\n        },\n        \"dfsp\": {\n            \"fspId\": 23456,\n            \"name\": \"SBI\"\n        },\n        \"program\": {\n            \"programId\": 20202,\n            \"programName\": \"Financial Inclusion Program\"\n        },\n        \"status\": \"Inactive\"\n    },\n    {\n        \"configId\": 10003,\n        \"account\": \"345678901234\",\n        \"governmentEntity\": {\n            \"govInstId\": 10101,\n            \"name\": \"Ministry of Social Welfare -updated2\"\n        },\n        \"dfsp\": {\n            \"fspId\": 10123,\n            \"name\": \"EQUITAS\"\n        },\n        \"program\": {\n            \"programId\": 10234,\n            \"programName\": \"Environmental Protection Program\"\n        },\n        \"status\": \"Inactive\"\n    },\n    {\n        \"configId\": 10004,\n        \"account\": \"456789012345\",\n        \"governmentEntity\": {\n            \"govInstId\": 40404,\n            \"name\": \"Ministry of Defence\"\n        },\n        \"dfsp\": {\n            \"fspId\": 45678,\n            \"name\": \"AXIS\"\n        },\n        \"program\": {\n            \"programId\": 40404,\n            \"programName\": \"National Health Mission\"\n        },\n        \"status\": \"Pending\"\n    },\n    {\n        \"configId\": 10005,\n        \"account\": \"567890123456\",\n        \"governmentEntity\": {\n            \"govInstId\": 50505,\n            \"name\": \"Ministry of Agriculture\"\n        },\n        \"dfsp\": {\n            \"fspId\": 56789,\n            \"name\": \"KOTAK\"\n        },\n        \"program\": {\n            \"programId\": 50505,\n            \"programName\": \"Mid-Day Meal Scheme\"\n        },\n        \"status\": \"Active\"\n    },\n    {\n        \"configId\": 10006,\n        \"account\": \"678901234567\",\n        \"governmentEntity\": {\n            \"govInstId\": 60606,\n            \"name\": \"Ministry of Commerce\"\n        },\n        \"dfsp\": {\n            \"fspId\": 67890,\n            \"name\": \"PNB\"\n        },\n        \"program\": {\n            \"programId\": 60606,\n            \"programName\": \"Sarva Shiksha Abhiyan\"\n        },\n        \"status\": \"Inactive\"\n    },\n    {\n        \"configId\": 10007,\n        \"account\": \"789012345678\",\n        \"governmentEntity\": {\n            \"govInstId\": 70707,\n            \"name\": \"Ministry of Labour\"\n        },\n        \"dfsp\": {\n            \"fspId\": 78901,\n            \"name\": \"BOB\"\n        },\n        \"program\": {\n            \"programId\": 70707,\n            \"programName\": \"Defence Modernization Program\"\n        },\n        \"status\": \"Active\"\n    },\n    {\n        \"configId\": 10008,\n        \"account\": \"890123456789\",\n        \"governmentEntity\": {\n            \"govInstId\": 80808,\n            \"name\": \"Ministry of Women and Child Development\"\n        },\n        \"dfsp\": {\n            \"fspId\": 89012,\n            \"name\": \"IDBI\"\n        },\n        \"program\": {\n            \"programId\": 80808,\n            \"programName\": \"Veterans Welfare Program\"\n        },\n        \"status\": \"Pending\"\n    },\n    {\n        \"configId\": 10009,\n        \"account\": \"901234567890\",\n        \"governmentEntity\": {\n            \"govInstId\": 90909,\n            \"name\": \"Ministry of Social Justice and Empowerment\"\n        },\n        \"dfsp\": {\n            \"fspId\": 90123,\n            \"name\": \"CANARA\"\n        },\n        \"program\": {\n            \"programId\": 90909,\n            \"programName\": \"Agricultural Subsidy Program\"\n        },\n        \"status\": \"Active\"\n    },\n    {\n        \"configId\": 10010,\n        \"account\": \"012345678901\",\n        \"governmentEntity\": {\n            \"govInstId\": 11223,\n            \"name\": \"Ministry of Environment, Forest and Climate Change\"\n        },\n        \"dfsp\": {\n            \"fspId\": 11234,\n            \"name\": \"UCO\"\n        },\n        \"program\": {\n            \"programId\": 11223,\n            \"programName\": \"Crop Insurance Scheme\"\n        },\n        \"status\": \"Inactive\"\n    },\n    {\n        \"configId\": 10011,\n        \"account\": \"123456789012\",\n        \"governmentEntity\": {\n            \"govInstId\": 22334,\n            \"name\": \"Ministry of Science and Technology\"\n        },\n        \"dfsp\": {\n            \"fspId\": 22345,\n            \"name\": \"SYNDICATE\"\n        },\n        \"program\": {\n            \"programId\": 22334,\n            \"programName\": \"Export Promotion Scheme\"\n        },\n        \"status\": \"Active\"\n    },\n    {\n        \"configId\": 10012,\n        \"account\": \"234567890123\",\n        \"governmentEntity\": {\n            \"govInstId\": 33445,\n            \"name\": \"Ministry of Information and Broadcasting\"\n        },\n        \"dfsp\": {\n            \"fspId\": 33456,\n            \"name\": \"VIJAYA\"\n        },\n        \"program\": {\n            \"programId\": 33445,\n            \"programName\": \"Trade Facilitation Program\"\n        },\n        \"status\": \"Pending\"\n    },\n    {\n        \"configId\": 10013,\n        \"account\": \"345678901234\",\n        \"governmentEntity\": {\n            \"govInstId\": 44556,\n            \"name\": \"Ministry of Culture\"\n        },\n        \"dfsp\": {\n            \"fspId\": 44567,\n            \"name\": \"ALLAHABAD\"\n        },\n        \"program\": {\n            \"programId\": 44556,\n            \"programName\": \"Employment Guarantee Scheme\"\n        },\n        \"status\": \"Active\"\n    },\n    {\n        \"configId\": 10014,\n        \"account\": \"456789012345\",\n        \"governmentEntity\": {\n            \"govInstId\": 55667,\n            \"name\": \"Ministry of Civil Aviation\"\n        },\n        \"dfsp\": {\n            \"fspId\": 55678,\n            \"name\": \"ANDHRA\"\n        },\n        \"program\": {\n            \"programId\": 55667,\n            \"programName\": \"Skill Development Initiative\"\n        },\n        \"status\": \"Inactive\"\n    },\n    {\n        \"configId\": 10015,\n        \"account\": \"567890123456\",\n        \"governmentEntity\": {\n            \"govInstId\": 66778,\n            \"name\": \"Ministry of Railways\"\n        },\n        \"dfsp\": {\n            \"fspId\": 66789,\n            \"name\": \"BANK OF BARODA\"\n        },\n        \"program\": {\n            \"programId\": 66778,\n            \"programName\": \"Women Empowerment Program\"\n        },\n        \"status\": \"Pending\"\n    },\n    {\n        \"configId\": 10016,\n        \"account\": \"678901234567\",\n        \"governmentEntity\": {\n            \"govInstId\": 77889,\n            \"name\": \"Ministry of Road Transport and Highways\"\n        },\n        \"dfsp\": {\n            \"fspId\": 77890,\n            \"name\": \"CENTRAL BANK\"\n        },\n        \"program\": {\n            \"programId\": 77889,\n            \"programName\": \"Child Welfare Scheme\"\n        },\n        \"status\": \"Active\"\n    },\n    {\n        \"configId\": 10017,\n        \"account\": \"789012345678\",\n        \"governmentEntity\": {\n            \"govInstId\": 88990,\n            \"name\": \"Ministry of Shipping\"\n        },\n        \"dfsp\": {\n            \"fspId\": 88901,\n            \"name\": \"CORPORATION\"\n        },\n        \"program\": {\n            \"programId\": 88990,\n            \"programName\": \"Social Security Scheme\"\n        },\n        \"status\": \"Inactive\"\n    },\n    {\n        \"configId\": 10018,\n        \"account\": \"890123456789\",\n        \"governmentEntity\": {\n            \"govInstId\": 99001,\n            \"name\": \"Ministry of Micro, Small and Medium Enterprises\"\n        },\n        \"dfsp\": {\n            \"fspId\": 99012,\n            \"name\": \"DENA\"\n        },\n        \"program\": {\n            \"programId\": 99001,\n            \"programName\": \"Disability Benefits Program\"\n        },\n        \"status\": \"Pending\"\n    },\n    {\n        \"configId\": 10019,\n        \"account\": \"901234567890\",\n        \"governmentEntity\": {\n            \"govInstId\": 10234,\n            \"name\": \"Ministry of Housing and Urban Affairs\"\n        },\n        \"dfsp\": {\n            \"fspId\": 10123,\n            \"name\": \"EQUITAS\"\n        },\n        \"program\": {\n            \"programId\": 10234,\n            \"programName\": \"Environmental Protection Program\"\n        },\n        \"status\": \"Active\"\n    },\n    {\n        \"configId\": 10020,\n        \"account\": \"012345678901\",\n        \"governmentEntity\": {\n            \"govInstId\": 21345,\n            \"name\": \"Ministry of Power\"\n        },\n        \"dfsp\": {\n            \"fspId\": 21234,\n            \"name\": \"FEDERAL\"\n        },\n        \"program\": {\n            \"programId\": 21345,\n            \"programName\": \"Climate Change Mitigation Scheme\"\n        },\n        \"status\": \"Inactive\"\n    },\n    {\n        \"configId\": 10021,\n        \"account\": \"123456789012\",\n        \"governmentEntity\": {\n            \"govInstId\": 32456,\n            \"name\": \"Ministry of New and Renewable Energy\"\n        },\n        \"dfsp\": {\n            \"fspId\": 32345,\n            \"name\": \"HINDUSTAN\"\n        },\n        \"program\": {\n            \"programId\": 32456,\n            \"programName\": \"Scientific Research Grant\"\n        },\n        \"status\": \"Pending\"\n    },\n    {\n        \"configId\": 10022,\n        \"account\": \"234567890123\",\n        \"governmentEntity\": {\n            \"govInstId\": 43567,\n            \"name\": \"Ministry of Petroleum and Natural Gas\"\n        },\n        \"dfsp\": {\n            \"fspId\": 43456,\n            \"name\": \"INDBANK\"\n        },\n        \"program\": {\n            \"programId\": 43567,\n            \"programName\": \"Innovation Promotion Program\"\n        },\n        \"status\": \"Active\"\n    },\n    {\n        \"configId\": 10023,\n        \"account\": \"345678901234\",\n        \"governmentEntity\": {\n            \"govInstId\": 54678,\n            \"name\": \"Ministry of Mines\"\n        },\n        \"dfsp\": {\n            \"fspId\": 54567,\n            \"name\": \"INDUSIND\"\n        },\n        \"program\": {\n            \"programId\": 54678,\n            \"programName\": \"Digital India Initiative\"\n        },\n        \"status\": \"Inactive\"\n    },\n    {\n        \"configId\": 10024,\n        \"account\": \"456789012345\",\n        \"governmentEntity\": {\n            \"govInstId\": 65789,\n            \"name\": \"Ministry of Earth Sciences\"\n        },\n        \"dfsp\": {\n            \"fspId\": 65678,\n            \"name\": \"INFOTECH\"\n        },\n        \"program\": {\n            \"programId\": 65789,\n            \"programName\": \"Media Literacy Campaign\"\n        },\n        \"status\": \"Pending\"\n    },\n    {\n        \"configId\": 10025,\n        \"account\": \"567890123456\",\n        \"governmentEntity\": {\n            \"govInstId\": 76890,\n            \"name\": \"Ministry of Skill Development and Entrepreneurship\"\n        },\n        \"dfsp\": {\n            \"fspId\": 76789,\n            \"name\": \"IOB\"\n        },\n        \"program\": {\n            \"programId\": 76890,\n            \"programName\": \"Cultural Preservation Program\"\n        },\n        \"status\": \"Active\"\n    },\n    {\n        \"configId\": 10026,\n        \"account\": \"678901234567\",\n        \"governmentEntity\": {\n            \"govInstId\": 87901,\n            \"name\": \"Ministry of Youth Affairs and Sports\"\n        },\n        \"dfsp\": {\n            \"fspId\": 87890,\n            \"name\": \"J&K\"\n        },\n        \"program\": {\n            \"programId\": 87901,\n            \"programName\": \"Arts Funding Scheme\"\n        },\n        \"status\": \"Inactive\"\n    },\n    {\n        \"configId\": 10027,\n        \"account\": \"789012345678\",\n        \"governmentEntity\": {\n            \"govInstId\": 98012,\n            \"name\": \"Ministry of Animal Husbandry, Dairying and Fisheries\"\n        },\n        \"dfsp\": {\n            \"fspId\": 98901,\n            \"name\": \"KARNATAKA\"\n        },\n        \"program\": {\n            \"programId\": 98012,\n            \"programName\": \"Aviation Safety Program\"\n        },\n        \"status\": \"Pending\"\n    },\n    {\n        \"configId\": 10028,\n        \"account\": \"890123456789\",\n        \"governmentEntity\": {\n            \"govInstId\": 10123,\n            \"name\": \"Ministry of Jal Shakti\"\n        },\n        \"dfsp\": {\n            \"fspId\": 19012,\n            \"name\": \"KARUR VYSYA\"\n        },\n        \"program\": {\n            \"programId\": 10123,\n            \"programName\": \"Airport Development Scheme\"\n        },\n        \"status\": \"Active\"\n    },\n    {\n        \"configId\": 10029,\n        \"account\": \"901234567890\",\n        \"governmentEntity\": {\n            \"govInstId\": 21234,\n            \"name\": \"Ministry of Panchayati Raj\"\n        },\n        \"dfsp\": {\n            \"fspId\": 29123,\n            \"name\": \"LAKSHMI VILAS\"\n        },\n        \"program\": {\n            \"programId\": 21234,\n            \"programName\": \"Railway Modernization Plan\"\n        },\n        \"status\": \"Inactive\"\n    },\n    {\n        \"configId\": 10030,\n        \"account\": \"012345678901\",\n        \"governmentEntity\": {\n            \"govInstId\": 32345,\n            \"name\": \"Ministry of Tribal Affairs\"\n        },\n        \"dfsp\": {\n            \"fspId\": 39234,\n            \"name\": \"MAHARASHTRA\"\n        },\n        \"program\": {\n            \"programId\": 32345,\n            \"programName\": \"Passenger Safety Program\"\n        },\n        \"status\": \"Pending\"\n    },\n    {\n        \"configId\": 10031,\n        \"account\": \"123456789012\",\n        \"governmentEntity\": {\n            \"govInstId\": 43456,\n            \"name\": \"Ministry of Rural Development\"\n        },\n        \"dfsp\": {\n            \"fspId\": 49345,\n            \"name\": \"ORIENTAL\"\n        },\n        \"program\": {\n            \"programId\": 43456,\n            \"programName\": \"Highway Development Program\"\n        },\n        \"status\": \"Active\"\n    },\n    {\n        \"configId\": 10032,\n        \"account\": \"234567890123\",\n        \"governmentEntity\": {\n            \"govInstId\": 54567,\n            \"name\": \"Ministry of Consumer Affairs, Food and Public Distribution\"\n        },\n        \"dfsp\": {\n            \"fspId\": 59456,\n            \"name\": \"PUNJAB & SINDH\"\n        },\n        \"program\": {\n            \"programId\": 54567,\n            \"programName\": \"Road Safety Initiative\"\n        },\n        \"status\": \"Inactive\"\n    },\n    {\n        \"configId\": 10033,\n        \"account\": \"345678901234\",\n        \"governmentEntity\": {\n            \"govInstId\": 65678,\n            \"name\": \"Ministry of Textiles\"\n        },\n        \"dfsp\": {\n            \"fspId\": 69567,\n            \"name\": \"RELIANCE\"\n        },\n        \"program\": {\n            \"programId\": 65678,\n            \"programName\": \"Port Development Project\"\n        },\n        \"status\": \"Pending\"\n    },\n    {\n        \"configId\": 10034,\n        \"account\": \"456789012345\",\n        \"governmentEntity\": {\n            \"govInstId\": 76789,\n            \"name\": \"Ministry of Commerce and Industry\"\n        },\n        \"dfsp\": {\n            \"fspId\": 79678,\n            \"name\": \"SIDBI\"\n        },\n        \"program\": {\n            \"programId\": 76789,\n            \"programName\": \"Shipping Safety Program\"\n        },\n        \"status\": \"Active\"\n    },\n    {\n        \"configId\": 10035,\n        \"account\": \"231425125555\",\n        \"governmentEntity\": {\n            \"govInstId\": 10101,\n            \"name\": \"Ministry of Social Welfare -updated2\"\n        },\n        \"dfsp\": {\n            \"fspId\": 10123,\n            \"name\": \"EQUITAS\"\n        },\n        \"program\": {\n            \"programId\": 10101,\n            \"programName\": \"Tax Relief v2\"\n        },\n        \"status\": \"Inactive\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Get G2P Payment Config by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8084/g2pPaymentConfig/10036",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"g2pPaymentConfig",
+								"10036"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get G2P Payment Config by ID",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8084/g2pPaymentConfig/10001",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8084",
+									"path": [
+										"g2pPaymentConfig",
+										"10001"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 11 Sep 2024 13:00:58 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"configId\": 10001,\n    \"account\": \"123456789012\",\n    \"governmentEntity\": {\n        \"govInstId\": 10101,\n        \"name\": \"Ministry of Social Welfare -updated2\"\n    },\n    \"dfsp\": {\n        \"fspId\": 12345,\n        \"name\": \"ICICI\"\n    },\n    \"program\": {\n        \"programId\": 10101,\n        \"programName\": \"Tax Relief v2\"\n    },\n    \"status\": \"Active\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Add G2P Payment Config",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"account\": \"123456789066\",\r\n    \"governmentEntity\": {\r\n        \"govInstId\": 98012\r\n    },\r\n    \"dfsp\": {\r\n        \"fspId\": 49345\r\n    },\r\n    \"program\": {\r\n        \"programId\": 10123\r\n    },\r\n    \"status\": \"Active\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8084/g2pPaymentConfig",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"g2pPaymentConfig"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Add G2P Payment Config",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"account\": \"123456789066\",\r\n    \"governmentEntity\": {\r\n        \"govInstId\": 98012\r\n    },\r\n    \"dfsp\": {\r\n        \"fspId\": 49345\r\n    },\r\n    \"program\": {\r\n        \"programId\": 10123\r\n    },\r\n    \"status\": \"Active\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8084/g2pPaymentConfig",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8084",
+									"path": [
+										"g2pPaymentConfig"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 11 Sep 2024 13:04:51 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"configId\": 10036,\n    \"account\": \"123456789066\",\n    \"governmentEntity\": {\n        \"govInstId\": 98012,\n        \"name\": \"Ministry of Animal Husbandry, Dairying and Fisheries\"\n    },\n    \"dfsp\": {\n        \"fspId\": 49345,\n        \"name\": \"ORIENTAL\"\n    },\n    \"program\": {\n        \"programId\": 10123,\n        \"programName\": \"Airport Development Scheme\"\n    },\n    \"status\": \"Active\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Update G2P Payment Config",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"account\": \"123456789065\",\r\n    \"governmentEntity\": {\r\n        \"govInstId\": 98012\r\n    },\r\n    \"dfsp\": {\r\n        \"fspId\": 49345\r\n    },\r\n    \"program\": {\r\n        \"programId\": 10123\r\n    },\r\n    \"status\": \"Inactive\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8084/g2pPaymentConfig/10036",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"g2pPaymentConfig",
+								"10036"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update G2P Payment Config",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"account\": \"123456789065\",\r\n    \"governmentEntity\": {\r\n        \"govInstId\": 98012\r\n    },\r\n    \"dfsp\": {\r\n        \"fspId\": 49345\r\n    },\r\n    \"program\": {\r\n        \"programId\": 10123\r\n    },\r\n    \"status\": \"Inactive\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8084/g2pPaymentConfig/10036",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8084",
+									"path": [
+										"g2pPaymentConfig",
+										"10036"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 11 Sep 2024 13:05:52 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"configId\": 10036,\n    \"account\": \"123456789065\",\n    \"governmentEntity\": {\n        \"govInstId\": 98012,\n        \"name\": \"Ministry of Animal Husbandry, Dairying and Fisheries\"\n    },\n    \"dfsp\": {\n        \"fspId\": 49345,\n        \"name\": \"ORIENTAL\"\n    },\n    \"program\": {\n        \"programId\": 10123,\n        \"programName\": \"Airport Development Scheme\"\n    },\n    \"status\": \"Inactive\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete G2P Payment Config",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8084/g2pPaymentConfig/10036",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"g2pPaymentConfig",
+								"10036"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete G2P Payment Config",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8084/g2pPaymentConfig/10036",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8084",
+									"path": [
+										"g2pPaymentConfig",
+										"10036"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 11 Sep 2024 13:06:55 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Programs",
+			"item": [
+				{
+					"name": "Get All Programs",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8084/program",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"program"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get All Programs",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8084/program",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8084",
+									"path": [
+										"program"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 11 Sep 2024 12:22:35 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"programId\": 10101,\n        \"programName\": \"Tax Relief Program\"\n    },\n    {\n        \"programId\": 10123,\n        \"programName\": \"Airport Development Scheme\"\n    },\n    {\n        \"programId\": 10234,\n        \"programName\": \"Environmental Protection Program\"\n    },\n    {\n        \"programId\": 10890,\n        \"programName\": \"Irrigation Development Scheme\"\n    },\n    {\n        \"programId\": 10901,\n        \"programName\": \"Resource Conservation Scheme\"\n    },\n    {\n        \"programId\": 11223,\n        \"programName\": \"Crop Insurance Scheme\"\n    },\n    {\n        \"programId\": 11789,\n        \"programName\": \"Industrial Development Program\"\n    },\n    {\n        \"programId\": 12678,\n        \"programName\": \"Border Security Scheme\"\n    },\n    {\n        \"programId\": 19012,\n        \"programName\": \"Smart City Initiative\"\n    },\n    {\n        \"programId\": 20202,\n        \"programName\": \"Financial Inclusion Program\"\n    },\n    {\n        \"programId\": 20901,\n        \"programName\": \"Rural Development Program\"\n    },\n    {\n        \"programId\": 21012,\n        \"programName\": \"Ocean Research Program\"\n    },\n    {\n        \"programId\": 21234,\n        \"programName\": \"Railway Modernization Plan\"\n    },\n    {\n        \"programId\": 21345,\n        \"programName\": \"Climate Change Mitigation Scheme\"\n    },\n    {\n        \"programId\": 21890,\n        \"programName\": \"Trade Facilitation Scheme\"\n    },\n    {\n        \"programId\": 22334,\n        \"programName\": \"Export Promotion Scheme\"\n    },\n    {\n        \"programId\": 22789,\n        \"programName\": \"Defense Modernization Program\"\n    },\n    {\n        \"programId\": 29123,\n        \"programName\": \"Affordable Housing Scheme\"\n    },\n    {\n        \"programId\": 30303,\n        \"programName\": \"Universal Health Coverage\"\n    },\n    {\n        \"programId\": 31012,\n        \"programName\": \"Panchayati Raj Strengthening\"\n    },\n    {\n        \"programId\": 31123,\n        \"programName\": \"Climate Monitoring Initiative\"\n    },\n    {\n        \"programId\": 31901,\n        \"programName\": \"Corporate Governance Program\"\n    },\n    {\n        \"programId\": 32345,\n        \"programName\": \"Passenger Safety Program\"\n    },\n    {\n        \"programId\": 32456,\n        \"programName\": \"Scientific Research Grant\"\n    },\n    {\n        \"programId\": 32890,\n        \"programName\": \"Veterans Welfare Program\"\n    },\n    {\n        \"programId\": 33445,\n        \"programName\": \"Trade Facilitation Program\"\n    },\n    {\n        \"programId\": 39234,\n        \"programName\": \"Rural Electrification Program\"\n    },\n    {\n        \"programId\": 40404,\n        \"programName\": \"National Health Mission\"\n    },\n    {\n        \"programId\": 41123,\n        \"programName\": \"Tribal Welfare Scheme\"\n    },\n    {\n        \"programId\": 41234,\n        \"programName\": \"Skill India Mission\"\n    },\n    {\n        \"programId\": 42012,\n        \"programName\": \"Company Law Reforms\"\n    },\n    {\n        \"programId\": 43456,\n        \"programName\": \"Highway Development Program\"\n    },\n    {\n        \"programId\": 43567,\n        \"programName\": \"Innovation Promotion Program\"\n    },\n    {\n        \"programId\": 44556,\n        \"programName\": \"Employment Guarantee Scheme\"\n    },\n    {\n        \"programId\": 49345,\n        \"programName\": \"Energy Conservation Scheme\"\n    },\n    {\n        \"programId\": 50505,\n        \"programName\": \"Mid-Day Meal Scheme\"\n    },\n    {\n        \"programId\": 51234,\n        \"programName\": \"Rural Employment Program\"\n    },\n    {\n        \"programId\": 51345,\n        \"programName\": \"Youth Entrepreneurship Program\"\n    },\n    {\n        \"programId\": 52123,\n        \"programName\": \"Legal Aid Scheme\"\n    },\n    {\n        \"programId\": 54567,\n        \"programName\": \"Road Safety Initiative\"\n    },\n    {\n        \"programId\": 54678,\n        \"programName\": \"Digital India Initiative\"\n    },\n    {\n        \"programId\": 55667,\n        \"programName\": \"Skill Development Initiative\"\n    },\n    {\n        \"programId\": 59456,\n        \"programName\": \"Renewable Energy Promotion\"\n    },\n    {\n        \"programId\": 60606,\n        \"programName\": \"Sarva Shiksha Abhiyan\"\n    },\n    {\n        \"programId\": 61345,\n        \"programName\": \"Consumer Protection Scheme\"\n    },\n    {\n        \"programId\": 61456,\n        \"programName\": \"Sports Promotion Scheme\"\n    },\n    {\n        \"programId\": 62234,\n        \"programName\": \"Judicial Reform Program\"\n    },\n    {\n        \"programId\": 65678,\n        \"programName\": \"Port Development Project\"\n    },\n    {\n        \"programId\": 65789,\n        \"programName\": \"Media Literacy Campaign\"\n    },\n    {\n        \"programId\": 66778,\n        \"programName\": \"Women Empowerment Program\"\n    },\n    {\n        \"programId\": 69567,\n        \"programName\": \"Solar Power Initiative\"\n    },\n    {\n        \"programId\": 70707,\n        \"programName\": \"Defence Modernization Program\"\n    },\n    {\n        \"programId\": 71456,\n        \"programName\": \"Food Security Program\"\n    },\n    {\n        \"programId\": 71567,\n        \"programName\": \"Livestock Development Program\"\n    },\n    {\n        \"programId\": 72345,\n        \"programName\": \"Diplomatic Engagement Program\"\n    },\n    {\n        \"programId\": 76789,\n        \"programName\": \"Shipping Safety Program\"\n    },\n    {\n        \"programId\": 76890,\n        \"programName\": \"Cultural Preservation Program\"\n    },\n    {\n        \"programId\": 77889,\n        \"programName\": \"Child Welfare Scheme\"\n    },\n    {\n        \"programId\": 79678,\n        \"programName\": \"Petroleum Exploration Scheme\"\n    },\n    {\n        \"programId\": 80808,\n        \"programName\": \"Veterans Welfare Program\"\n    },\n    {\n        \"programId\": 81567,\n        \"programName\": \"Textile Industry Promotion\"\n    },\n    {\n        \"programId\": 81678,\n        \"programName\": \"Fisheries Development Scheme\"\n    },\n    {\n        \"programId\": 82456,\n        \"programName\": \"International Cooperation Initiative\"\n    },\n    {\n        \"programId\": 87890,\n        \"programName\": \"MSME Support Scheme\"\n    },\n    {\n        \"programId\": 87901,\n        \"programName\": \"Arts Funding Scheme\"\n    },\n    {\n        \"programId\": 88990,\n        \"programName\": \"Social Security Scheme\"\n    },\n    {\n        \"programId\": 89789,\n        \"programName\": \"Natural Gas Development Program\"\n    },\n    {\n        \"programId\": 90909,\n        \"programName\": \"Agricultural Subsidy Program\"\n    },\n    {\n        \"programId\": 91678,\n        \"programName\": \"Handloom Development Scheme\"\n    },\n    {\n        \"programId\": 91789,\n        \"programName\": \"Water Conservation Program\"\n    },\n    {\n        \"programId\": 92567,\n        \"programName\": \"Public Safety Program\"\n    },\n    {\n        \"programId\": 98012,\n        \"programName\": \"Aviation Safety Program\"\n    },\n    {\n        \"programId\": 98901,\n        \"programName\": \"Entrepreneurship Development Program\"\n    },\n    {\n        \"programId\": 99001,\n        \"programName\": \"Disability Benefits Program\"\n    },\n    {\n        \"programId\": 99890,\n        \"programName\": \"Mining Safety Program\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Get Program by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8084/program/10101",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"program",
+								"10101"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Program by ID",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8084/program/10101",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8084",
+									"path": [
+										"program",
+										"10101"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 11 Sep 2024 12:22:54 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"programId\": 10101,\n    \"programName\": \"Tax Relief Program\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Add Program",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"programName\":\"Disablitiy Benefits -v2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8084/program",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"program"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Add Program",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"programName\":\"Disablitiy Benefits -v2\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8084/program",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8084",
+									"path": [
+										"program"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 11 Sep 2024 12:31:58 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"programId\": 99891,\n    \"programName\": \"Disablitiy Benefits -v2\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Update Program",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"programName\":\"Tax Relief v2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8084/program/10101",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"program",
+								"10101"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update Program",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"programName\":\"Tax Relief v2\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8084/program/10101",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8084",
+									"path": [
+										"program",
+										"10101"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 11 Sep 2024 12:31:24 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"programId\": 10101,\n    \"programName\": \"Tax Relief v2\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete Program",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8084/program/99891",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"program",
+								"99891"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete Program",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8084/program/99891",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8084",
+									"path": [
+										"program",
+										"99891"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 11 Sep 2024 13:07:54 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		}
+	]
+}
