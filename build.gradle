@@ -1,24 +1,40 @@
 plugins {
     id 'java'
-    id 'org.springframework.boot' version '3.3.3'
+    id 'org.springframework.boot' version '3.4.4'
     id 'io.spring.dependency-management' version '1.1.6'
 }
 
 group = 'org.mifos'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '17'
 
 java {
     toolchain {
-        languageVersion = JavaLanguageVersion.of(17)
+        languageVersion = JavaLanguageVersion.of(21)
     }
 }
 
 repositories {
     mavenCentral()
+    // Mifos Platform BOM is consumed from the local JFrog Artifactory sandbox
+    // (Docker Compose in proposal/local-jfrog/). Swap this host for the
+    // production Mifos JFrog when the official BOM is ready.
+    maven {
+        name = 'LocalJFrog'
+        url = uri('http://localhost:8081/artifactory/mifos-platform-snapshot')
+        allowInsecureProtocol = true
+        credentials {
+            username = findProperty('localJfrog.user') ?: System.getenv('LOCAL_JFROG_USER')
+            password = findProperty('localJfrog.key') ?: System.getenv('LOCAL_JFROG_KEY')
+        }
+    }
 }
 
 dependencies {
+    // Mifos Platform BOM pins Spring Boot 3.4, Jakarta EE 10 and every other
+    // shared library version. Do NOT hardcode managed versions below.
+    // This is a deployable application (leaf node), so use enforcedPlatform().
+    implementation enforcedPlatform('org.mifos.platform:mifos-platform-bom:1.0.0-SNAPSHOT')
+
     implementation 'org.springframework.boot:spring-boot-starter'
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springframework.boot:spring-boot-starter-jdbc'
